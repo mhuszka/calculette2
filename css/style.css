@@ -1,0 +1,120 @@
+html{
+    height:100%;
+    width: 100%;
+}
+
+
+body {
+    font-family: "Comfortaa";
+     font-weight: 800;
+     font-size: 1.5em;
+    margin:0;    
+    padding:0;
+    /*background-image: url(../images/calculatrice_enfant-05.svg);*/
+    width: auto;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.corps{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position:  relative;
+    overflow: hidden;
+    
+    width: 66vw;
+    max-width: 600px;
+    height: 70%;
+    
+    background-color: #F9FBFF;
+    border: 10px solid #3d3d3d;
+    border-radius: 3%;
+    }
+
+ .clavier{
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 0;
+     
+    width: 100%;
+    height: 70%;
+     
+    border-radius: 12%;
+    padding: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+
+.touche, .egal{    
+    font-family: "Comfortaa";
+    font-weight: 800;
+    font-size: 2.5vh;
+    width: 16%;
+    height: 14%;
+    box-sizing: border-box;
+    padding-top: 1vh;    
+    text-align: center;
+    border: 5px solid #E2E2E2;
+    border-radius: 12%;
+    margin: 0.25em;
+    cursor: pointer;
+}
+
+.egal{
+    background-color: #E2E2E2;
+    color: #3d3d3d;
+    font-size: 4vh;
+    padding-top: 0;
+
+}
+
+input{
+    font-family: "Comfortaa";
+    font-weight: 800;
+    font-size: 6.5vh;
+    color: #3d3d3d;
+    line-height: 4em;
+    
+    box-sizing: border-box;
+    padding: 3%;
+    padding-left: 6%;
+    margin-top: 2%;
+    width: 92%;
+    height: 25%;
+    
+    border: 5px solid #E2E2E2;
+    border-radius: 0.3em;
+    letter-spacing: 1.2vw;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.affiche{
+    opacity: 1;
+}
+
+.clear{
+   font-family: "Comfortaa";
+    font-weight: 800;
+    font-size: 2.5vh;
+    box-sizing: border-box;
+    text-align: center;
+    border: 5px solid #E2E2E2;
+    border-radius: 0.3em;
+    background-color: white;
+    margin: 1vh;
+    padding: 2vh;
+    cursor: pointer;
+}
